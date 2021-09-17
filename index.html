@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css" />
+        <title>Likes</title>
+	</head>	
+	<body>
+		<div class = "mainContainer">		<!--Add this div to have all web page content in one Container-->
+			<div class = "topBar">
+				<h1>Network</h1>
+			</div>
+			<div class = "feedBar">
+				<h1>Your Feed</h1>
+			</div>
+			<div class = "secondContainer">
+				<div class = "leftSide">
+					<div class = "userProfile">
+						<img alt="user profile picture" src="./images/user-circle.png" style="width:100px;height:100px;" />
+						<p><span class = "hyperlink">Add an avatar</span></p>
+						<p>James Doe</p>
+					</div>
+				</div>
+				<div class = "rightSide">
+					<div class = "comment">
+						<div class="userName">
+							<h2>Neil M</h2>
+							<p><span class = "counter" >9</span> likes(s)</p>
+							<button type="submit" class="likeBtn" onclick="addLikes(0)" > <!--onclick="addLikes(this)"-->
+								Like
+							</button>
+						</div>
+						<div class="userInput">
+							<p id="modP">I just set up this new discord bot, let me</p>
+							<p id="modP">know what you all think. <span class = "hyperlink">link</span></p>
+						</div>
+					</div>
+					<div class = "comment">
+						<div class="userName">
+							<h2>Nicole K</h2>
+							<p><span class = "counter">12</span> likes(s)</p>
+							<button type="submit" class="likeBtn" onclick="addLikes(1)" > 
+								Like
+							</button>
+						</div>
+						<div class="userInput">
+							<p id="modP">Just finished my <span class = "hyperlink">next comic</span>, check it out.</p>
+						</div>
+						</div>
+					<div class = "comment">
+						<div class="userName">
+							<h2>Jim R</h2>
+							<p><span class = "counter">9</span> likes(s)</p>
+							<button type="submit" class="likeBtn" onclick="addLikes(2)" > 
+								Like
+							</button>
+						</div>
+						<div class="userInput">
+							<p id="modP">I can't stop listening to the <span class = "hyperlink">new album</span>.</p>
+							<p id="modP">Who else  is liking it?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"> </script>
+    </body>
+</html>
